@@ -26,34 +26,37 @@
         position: fixed;
         z-index: 10;
         background-color: white;
+        width: 100%;
     }
     
     .header-container {
         width: 1170px;
         height: 75px;
         padding: 20px 0;
-        margin: 0 135px;
+        margin: 0 auto;
         position: relative;
     }
     
-    .header-left {
-        float: left;
-    }
-    
     .logo {
-        float: left;
+        display: inline-block;
         margin-top: -6px;
     }
     
     .logo img {
         width: 128px;
         height: auto;
+        position: absolute;
+        top: 15px;
+        left: 0;
     }
     
     .logo-text {
         display: inline-block;
         line-height: 50px;
         padding-left: 6px;
+        position: absolute;
+        top: 20px;
+        left: 130px;
     }
     
     .logo-text p {
@@ -66,13 +69,16 @@
         display: inline-block;
         position: absolute;
         right: 0;
+        top: 16px;
         padding: 11px 40px;
         margin-top: -5px;
-        /* ↓weight変えても変わらない */
-        font-weight: 300;
         font-size: 14px;
         letter-spacing: 2px;
         border-radius: 30px;
+    }
+    
+    .header-right2 {
+        display: none;
     }
     
     .inquiry {
@@ -86,12 +92,20 @@
     }
     
     .wrapper1 {
-        width: auto;
-        height: 575px;
+        width: 100%;
+        padding-top: 75px;
+    }
+    
+    .w1-background {
+        width: 100%;
+        height: 500px;
         background-image: url("https://isara.life/wp-content/themes/isara_v2/img/main.jpg");
         background-size: cover;
         background-position: center;
-        padding-top: 140px;
+    }
+    
+    .wrapper1-text {
+        padding-top: 80px;
     }
     
     .wrapper1-text img {
@@ -114,7 +128,6 @@
     
     .wrapper2 {
         width: auto;
-        height: 600px;
         background-color: #EBB94D;
     }
     
@@ -143,6 +156,10 @@
         margin-top: 10px;
         font-size: 18px;
         letter-spacing: normal;
+    }
+    
+    .brsp {
+        display: none;
     }
     
     .wrapper2-textbox-middle {
@@ -236,34 +253,36 @@
         width: auto;
         height: 650px;
         background-color: #FEF5E0;
-        position: relative;
+        text-align: center;
     }
     
     .about {
+        position: relative;
+        top: -40px;
+    }
+    
+    .about p {
         background-color: #EBB94D;
+        display: inline-block;
         color: white;
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        position: absolute;
-        top: -40px;
-        left: 680px;
         line-height: 80px;
     }
     
     .w4midashi {
         padding: 30px 250px;
-        margin: 80px 0 40px 0;
+        margin-bottom: 40px;
     }
     
     .skills-container {
         width: 1160px;
-        margin: 0 auto;
+        margin: 30px auto;
         border: solid 2px #EBB94D;
         border-radius: 5px;
         background-color: white;
         padding: 30px 0;
-        margin-top: 30px;
     }
     
     .wrapper4 h3 {
@@ -661,11 +680,15 @@
         font-size: 0.8em;
     }
     
-    .flow-container {
+    .flow-container-pc {
         width: 1170px;
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+    
+    .flow-container-sp {
+        display: none;
     }
     
     .flow {
@@ -757,6 +780,10 @@
         border: solid 2px white;
         width: 1170px;
         margin: 0 auto;
+    }
+    
+    .benefit-sp {
+        display: none;
     }
     
     .benefit {
