@@ -14,6 +14,21 @@ $(function() {
             $(this).find('.fas').addClass('.fas fa-chevron-up');
         }
     });
+    // w11アコーディオン
+    $('.flow2').click(function() {
+        var $textbox = $(this).find('.flow2-textbox');
+        if ($textbox.hasClass('open')) {
+            $textbox.removeClass('open');
+            $textbox.slideUp();
+            $(this).find('.fas').removeClass('.fas fa-chevron-up');
+            $(this).find('.fas').addClass('.fas fa-chevron-down');
+        } else {
+            $textbox.addClass('open');
+            $textbox.slideDown();
+            $(this).find('.fas').removeClass('.fas fa-chevron-down');
+            $(this).find('.fas').addClass('.fas fa-chevron-up');
+        }
+    });
 
     // トップページへの移動ボタン
     $(window).scroll(function() {
