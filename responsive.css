@@ -331,11 +331,11 @@
         font-size: 12px;
     }
     .learn-container {
-        padding: 30px 0;
+        padding: 30px 10px;
     }
     .learn {
-        width: 355px;
-        margin: 0 10px 10px 10px;
+        width: 100px;
+        margin: 0;
     }
     .learn h3 {
         font-size: 14px;
